@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 
+
 :root{
     --primary-color: rgb(55, 77, 92);
     --primary-color-darker: rgb(6, 43, 68);
-    --primary-color-darker-active: rgb(81, 172, 233);
+    --primary-color-darker-active: rgb(1, 11, 19);
 }
 
 * {
@@ -14,8 +15,9 @@
 
 body {
     margin: 0;
-    padding: 0;
-    background: var(--primary-color);
+    padding: 0;    
+    background-color: #023452;
+    background-image: linear-gradient(230deg, #023452 35%, #adadde 100%);
     font-family: 'Roboto', sans-serif;
     font-size: 1.3em;
     line-height: 1.5em;
@@ -27,11 +29,15 @@ body {
     margin: 50px auto;
     background-color: aliceblue;
     padding: 20px;
+    
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    -webkit-box-shadow: -4px 6px 40px 10px rgba(0,0,0,0.45);
+    -moz-box-shadow: -4px 6px 40px 10px rgba(0,0,0,0.45);
+    box-shadow: -4px 6px 40px 10px rgba(0,0,0,0.45);
 }
 
 form input, form label, form button {
@@ -68,3 +74,4 @@ form button:hover{
 form button:active{
     background-color: var(--primary-color-darker-active);
 }
+
